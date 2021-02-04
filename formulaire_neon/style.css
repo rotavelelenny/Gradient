@@ -1,0 +1,413 @@
+/* html,
+body {
+  width: 100%;
+  height: 100%;
+} */
+* {
+  margin: 0;
+  padding: 0;
+  box-shadow: border-box;
+ 
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #c7c7c7;
+  color: black;
+  /* modifier par lenny */
+  font-family: 'Montserrat', sans-serif ;
+}
+
+/* header */
+
+.h1{
+  font-family: 'Montserrat', sans-serif ;
+  font-size: 15px;
+  font-weight: 300px;
+  color: #ffffff;
+  letter-spacing: 10px;
+  text-align: justify;
+  /* padding-bottom: 40px; */
+  /* left: 50px; */
+}
+.bouton{
+  margin-top: 181px;
+  margin-bottom: 50px;
+}
+button{
+  border:white 2px solid ;
+  width: 114px;
+ 
+}
+button:hover{
+  border: black solid 3px;
+}
+a:hover{
+  color: black;
+}
+a {
+  color: rgb(255, 255, 255);
+  font-size: 1.25rem;
+  text-align: center;
+  width: 50%;
+  text-decoration: none; 
+}
+p{
+  background-color:  #8c8b8b;
+  text-align: center;
+  padding: 9px;
+ 
+}
+/* modifié par Lenny */
+.header{
+  background-image: linear-gradient(to left bottom, #ae9b00, #9ea40f, #8cad22, #77b536, #6bb138, #5eac39, #52a83b, #44a33d);
+  height: 100px;
+  z-index: 0;
+  padding: 78px;
+  width: 381px;
+  height: 70px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.container {
+  height: 100%;
+  width: 50vw;
+  padding: -2%;
+}
+
+.container h2 {
+  display: flex;
+  justify-content: center;
+  /* width: 50vw; */
+  color: #000;
+  font-size: 3vw;
+  text-align: center;
+  margin-bottom: 10px;
+/* modifier par lenny */
+    font-family: 'Montserrat', sans-serif ;
+}
+
+.h3{
+  font-family:  'Montserrat', sans-serif  ;
+  color: grey;
+  font-size: 3rem;
+  text-align: end;
+}
+
+.container .row100 {
+ 
+  /* modifié par lenny */
+  padding: 5%;
+  position: relative;
+  margin: 0px;
+  background-color: white;
+}
+
+.container .row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0px;
+  padding-bottom: -32px;
+  margin: 40px 0 40px;
+  transition: 0.5s;
+}
+
+.container .row100 .inputBox {
+  position: relative;
+  width: 100%;
+  height: 4vh;
+  color:#44a33d;
+  padding-bottom: 30px;
+}
+
+.container .row100 .inputBox input {
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 1vw;
+  padding: 0 10px;
+  z-index: 1;
+  /* modifié par Lenny */
+  color: white;
+  font-family: 'Montserrat', sans-serif ;
+  padding-left: 30px;
+}  
+
+.container .row100 .inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 1.5vw;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus + .text,
+.container .row100 .inputBox input:valid + .text {
+  top: -35px;
+  left: -10px;
+}
+
+.container .row100 .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 45vw;
+  height: 2px;
+  background: #44a33d;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.container .row100 .inputBox input:focus ~ .line,
+.container .row100 .inputBox input:valid ~ .line {
+  height: 100%;
+}
+
+.container .row100 .inputBox .textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0;
+}
+
+.container .row100 .inputBox textarea:focus ~ .line,
+.container .row100 .inputBox textarea:valid ~ .line {
+  top: -35px;
+  left: -10px;
+}
+
+.container .row100 .inputBox textarea:focus + .line,
+.container .row100 .inputBox textarea:valid + .line {
+  height: 100%;
+}
+
+input[type="submit"] {
+  width: 45vw;
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: #44a33d;
+  color: white;
+  font-size: 1.5vw;
+  border-radius: 2px;
+  letter-spacing: 10px;
+  text-align: center;
+}
+canvas {
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+  width: 50vw;
+  border: solid 2px #87bb34;
+  background: #fff;
+}
+
+#canvas {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 200px;
+  border: solid 2px #87bb34;
+  height: 150px;
+}
+#capture {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 200px;
+  border: solid 2px #87bb34;
+  height: 150px;
+}
+
+/* MISE EN PAGE*/
+/* .mise-en-page {
+} */
+.bloc-mise-en-page {
+  /* margin: 10px; */
+  flex: 1 0 0px;
+  min-width: 200px;
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 0px) and (max-width: 1200px) {
+  body h2 {
+    text-align: center;
+  }
+  .container {
+    width: 80vw;
+  }
+  .container h2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    font-size: 5vw;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .container .row100 {
+    margin-left: auto;
+    margin-right: auto;
+    border: solid 3px #cfcfcf; /* modifié par lenny */
+    padding: 2.5%;
+    position: relative;
+    width: 100%;
+    display: grid;
+    margin: 0px;
+    /* grid-template-columns: repeat(auto-fit, minmax(2000px, 1fr)); */
+  }
+
+  .container .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0px;
+    margin: 40px 0 40px;
+    transition: 0.5s;
+  }
+
+  .container .row100 .inputBox {
+    position: relative;
+    width: 100%;
+    height: 4vh;
+    color: #87bb34;
+  }
+
+  .container .row100 .inputBox input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    font-size: 2.5vw;
+    padding: 0 10px;
+    padding-bottom: 40px;
+    z-index: 1;
+    color: black;
+  }
+  .container .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 30px;
+    font-size: 2.5vw;
+    padding: 0 10px;
+    display: block;
+    transition: 0.5s;
+    pointer-events: none;
+  }
+
+  .container .row100 .inputBox input:focus + .text,
+  .container .row100 .inputBox input:valid + .text {
+    top: -35px;
+    left: -10px;
+  }
+
+  .container .row100 .inputBox .line {
+    width: 80vw;
+    height: 2px;
+    background: #87bb34;
+    transition: 0.5s;
+    border-radius: 2px;
+    pointer-events: none;
+  }
+
+  .container .row100 .inputBox input:focus ~ .line,
+  .container .row100 .inputBox input:valid ~ .line {
+    height: 100%;
+  }
+
+  .container .row100 .inputBox .textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 0;
+  }
+
+  .container .row100 .inputBox textarea:focus ~ .line,
+  .container .row100 .inputBox textarea:valid ~ .line {
+    top: -35px;
+    left: -10px;
+  }
+
+  .container .row100 .inputBox textarea:focus + .line,
+  .container .row100 .inputBox textarea:valid + .line {
+    height: 100%;
+  }
+
+  input[type="submit"] {
+    width: 75vw;
+    border: none;
+    padding: 7px 35px;
+    cursor: pointer;
+    outline: none;
+    background: #87bb34;
+    color: black;
+    font-size: 1.5vw;
+    border-radius: 2px;
+  }
+  canvas {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+    width: 50vw;
+    border: solid 2px #87bb34;
+    background: #fff;
+  }
+
+  #canvas {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+    border: solid 2px #87bb34;
+    height: 150px;
+    margin-bottom: 2%;
+  }
+  #capture {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 200px;
+    border: solid 2px #87bb34;
+    height: 150px;
+  }
+
+  /* .mise-en-page {
+  } */
+  .bloc-mise-en-page {
+    margin: 10px;
+    flex: 1 0 0px;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+  }
+}
+
+/* couleur afpa
+#87bb34; vert claire	
+#44a33d;  vert sombre
+#cf004b; fushia (rose) */ 
